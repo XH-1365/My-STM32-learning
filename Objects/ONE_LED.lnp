@@ -1,0 +1,7 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\startup_stm32f429_439xx.o"
+--library_type=microlib --strict --scatter ".\Objects\ONE_LED.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ONE_LED.map" -o .\Objects\ONE_LED.axf
