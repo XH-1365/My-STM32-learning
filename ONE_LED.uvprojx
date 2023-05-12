@@ -394,6 +394,11 @@
               <FileType>3</FileType>
               <FilePath>.\startup_stm32f429_439xx.o</FilePath>
             </File>
+            <File>
+              <FileName>stm32f4xx_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Sys\stm32f4xx_gpio.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
