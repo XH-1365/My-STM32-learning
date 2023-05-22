@@ -1,6 +1,6 @@
 #include "bsp_led.h"
 
-void LED_proc()
+void LED_proc(void)
 {
 	RCC_AHB1PeriphClockCmd(RCC_AHB1ENR_GPIOHEN,ENABLE);
 	
@@ -13,9 +13,8 @@ void LED_proc()
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;				//选择上拉还是下拉
 
 	GPIO_InitStruct.GPIO_Speed = GPIO_Fast_Speed;		//传输速度Hz
-
 	
-	GPIO_Init(GPIOH,&GPIO_InitStruct);
+	GPIO_Init(LED_R_PORT,& GPIO_InitStruct);
 
 }
 

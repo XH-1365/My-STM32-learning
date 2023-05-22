@@ -46,6 +46,7 @@
 ".\objects\main.o"
 ".\objects\stm32f4xx_it.o"
 ".\objects\bsp_led.o"
+".\objects\bsp.key.o"
 --strict --scatter ".\Objects\Firm_led.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
