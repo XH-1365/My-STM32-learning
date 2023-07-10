@@ -3,4 +3,4 @@
 
 #include "stm32f4xx_rcc.h"
 
-#endif /*RCCCLOCK*/
+#endif /*_BSP_RCCCLOCK_H*/

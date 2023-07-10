@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F429_439xx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\study;..\Libraries\CMSIS\Include;..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\User;..\User\led;..\User\key;..\User\rcc</IncludePath>
+              <IncludePath>..\..\study;..\Libraries\CMSIS\Include;..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\User;..\User\led;..\User\key;..\User\rcc;..\User\i2c\csrc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

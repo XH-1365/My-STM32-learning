@@ -1,4 +1,4 @@
---c99 -c --cpu Cortex-M4.fp -g --apcs=interwork --split_sections -I ..\..\study -I ..\Libraries\CMSIS\Include -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\User -I ..\User\led -I ..\User\key -I ..\User\rcc
+--c99 -c --cpu Cortex-M4.fp -g --apcs=interwork --split_sections -I ..\..\study -I ..\Libraries\CMSIS\Include -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\User -I ..\User\led -I ..\User\key -I ..\User\rcc -I ..\User\i2c\csrc
 -I.\RTE\_Target_1
 -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -IC:\Keil_v5\ARM\CMSIS\Include

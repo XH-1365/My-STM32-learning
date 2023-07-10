@@ -1,6 +1,6 @@
 #include "bsp_rccclock.h"
 
-#if 0
+
 static void SetSysClock(void)
 {
 
@@ -37,13 +37,15 @@ static void SetSysClock(void)
     RCC->CFGR |= RCC_CFGR_PPRE2_DIV2;
     /* PCLK1 = HCLK / 4*/
     RCC->CFGR |= RCC_CFGR_PPRE1_DIV4;
+		
+		
     /* 配置 主 PLL */
     RCC->PLLCFGR = PLL_M | (PLL_N << 6) | (((PLL_P >> 1) -1) << 16) |
                    (RCC_PLLCFGR_PLLSRC_HSE) | (PLL_Q << 24);
     /* 使能 PLL */
     RCC->CR |= RCC_CR_PLLON;
 
-    /* 等待PLL启动稳定 */
+    /* 等待PLL启 动稳定 */
     while((RCC->CR & RCC_CR_PLLRDY) == 0)
     {
     }
@@ -67,6 +69,7 @@ static void SetSysClock(void)
     /* Wait till the main PLL is used as system clock source */
     while ((RCC->CFGR & (uint32_t)RCC_CFGR_SWS ) != RCC_CFGR_SWS_PLL);
     {
+			
     }
   }
   else
@@ -74,6 +77,6 @@ static void SetSysClock(void)
          configuration. User can add here some code to deal with this error */
 		/* 启动失败 */
   }
-#elif defined(STM32F410xx) || defined(STM32F411xE)
+#endif defined(STM32F410xx) || defined(STM32F411xE)
+
 }
-#endif

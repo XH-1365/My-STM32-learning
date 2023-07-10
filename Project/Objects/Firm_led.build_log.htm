@@ -3,88 +3,116 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.23.0.0
-Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+IDE-Version: ¦ÌVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: HZD D, HZD, LIC=BUURY-IZBSM-8TC3P-MQSMC-MN30J-FYA6G
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 4 (build 422)
-Assembler:       Armasm.exe V5.06 update 4 (build 422)
-Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
-Library Manager: ArmAr.exe V5.06 update 4 (build 422)
-Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
-CPU DLL:         SARMCM3.DLL V5.23
-Dialog DLL:      DCM.DLL V1.15.0.0
-Target DLL:      CMSIS_AGDI.dll V1.27.5.0
-Dialog DLL:      TCM.DLL V1.27.0.0
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
 D:\fireClass\study\Project\Firm_led.uvprojx
-Project File Date:  05/17/2023
+Project File Date:  07/01/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Rebuild target 'Target 1'
-assembling startup_stm32f429_439xx.s...
-compiling stm32f4xx_crc.c...
-compiling stm32f4xx_cec.c...
-compiling system_stm32f4xx.c...
-compiling stm32f4xx_adc.c...
-compiling misc.c...
-compiling stm32f4xx_can.c...
-compiling stm32f4xx_cryp.c...
-compiling stm32f4xx_cryp_aes.c...
-compiling stm32f4xx_dcmi.c...
-compiling stm32f4xx_dac.c...
-compiling stm32f4xx_dfsdm.c...
-compiling stm32f4xx_cryp_tdes.c...
-compiling stm32f4xx_dbgmcu.c...
-compiling stm32f4xx_dma.c...
-compiling stm32f4xx_cryp_des.c...
-compiling stm32f4xx_dma2d.c...
-compiling stm32f4xx_flash_ramfunc.c...
-compiling stm32f4xx_exti.c...
-compiling stm32f4xx_dsi.c...
-compiling stm32f4xx_gpio.c...
-compiling stm32f4xx_fmpi2c.c...
-compiling stm32f4xx_flash.c...
-compiling stm32f4xx_fmc.c...
-compiling stm32f4xx_hash_md5.c...
-compiling stm32f4xx_iwdg.c...
-compiling stm32f4xx_lptim.c...
-compiling stm32f4xx_hash.c...
-compiling stm32f4xx_i2c.c...
-compiling stm32f4xx_hash_sha1.c...
-compiling stm32f4xx_pwr.c...
-compiling stm32f4xx_ltdc.c...
-compiling stm32f4xx_rcc.c...
-compiling stm32f4xx_qspi.c...
-compiling stm32f4xx_sdio.c...
-compiling stm32f4xx_rng.c...
-compiling stm32f4xx_sai.c...
-compiling stm32f4xx_spi.c...
-compiling stm32f4xx_spdifrx.c...
-compiling stm32f4xx_rtc.c...
-compiling main.c...
-compiling stm32f4xx_syscfg.c...
-compiling stm32f4xx_it.c...
-compiling stm32f4xx_usart.c...
-compiling bsp_led.c...
-compiling bsp.key.c...
-compiling stm32f4xx_wwdg.c...
-compiling stm32f4xx_tim.c...
-linking...
-Program Size: Code=1000 RO-data=444 RW-data=0 ZI-data=1632  
-".\Objects\Firm_led.axf" - 0 Error(s), 0 Warning(s).
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling bsp_rccclock.c...
+..\Libraries\CMSIS\Include\core_cm3.h(76): warning:  #47-D: incompatible redefinition of macro "__CORTEX_M"  (declared at line 76 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  #define __CORTEX_M                (0x03)                                   /*!< Cortex-M Core                    */
+..\Libraries\CMSIS\Include\core_cm3.h(114): warning:  #47-D: incompatible redefinition of macro "__FPU_USED"  (declared at line 117 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  #define __FPU_USED       0
+..\Libraries\CMSIS\Include\core_cm3.h(118): warning:  #1215-D: #warning directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+      #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+..\Libraries\CMSIS\Include\core_cm3.h(243): error:  #256: invalid redeclaration of type name "APSR_Type"  (declared at line 292 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } APSR_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(272): error:  #256: invalid redeclaration of type name "IPSR_Type"  (declared at line 324 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } IPSR_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(296): error:  #256: invalid redeclaration of type name "xPSR_Type"  (declared at line 350 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } xPSR_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(335): error:  #256: invalid redeclaration of type name "CONTROL_Type"  (declared at line 393 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } CONTROL_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(370): error:  #256: invalid redeclaration of type name "NVIC_Type"  (declared at line 431 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  }  NVIC_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(410): error:  #256: invalid redeclaration of type name "SCB_Type"  (declared at line 471 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } SCB_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(465): warning:  #47-D: incompatible redefinition of macro "SCB_VTOR_TBLOFF_Msk"  (declared at line 522 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  #define SCB_VTOR_TBLOFF_Msk                (0x3FFFFFUL << SCB_VTOR_TBLOFF_Pos)            /*!< SCB VTOR: TBLOFF Mask */
+..\Libraries\CMSIS\Include\core_cm3.h(621): error:  #256: invalid redeclaration of type name "SCnSCB_Type"  (declared at line 670 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } SCnSCB_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(655): error:  #256: invalid redeclaration of type name "SysTick_Type"  (declared at line 709 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } SysTick_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(733): error:  #256: invalid redeclaration of type name "ITM_Type"  (declared at line 787 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } ITM_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(825): error:  #256: invalid redeclaration of type name "DWT_Type"  (declared at line 879 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } DWT_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(971): error:  #256: invalid redeclaration of type name "TPI_Type"  (declared at line 1025 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } TPI_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(1112): error:  #256: invalid redeclaration of type name "MPU_Type"  (declared at line 1166 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } MPU_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(1197): error:  #256: invalid redeclaration of type name "CoreDebug_Type"  (declared at line 1357 of "..\Libraries\CMSIS\Include\core_cm4.h")
+  } CoreDebug_Type;
+..\Libraries\CMSIS\Include\core_cm3.h(1350): error:  #247: function "NVIC_SetPriorityGrouping"  has already been defined
+  __STATIC_INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+..\Libraries\CMSIS\Include\core_cm3.h(1370): error:  #247: function "NVIC_GetPriorityGrouping"  has already been defined
+  __STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
+..\Libraries\CMSIS\Include\core_cm3.h(1382): error:  #247: function "NVIC_EnableIRQ"  has already been defined
+  __STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1394): error:  #247: function "NVIC_DisableIRQ"  has already been defined
+  __STATIC_INLINE void NVIC_DisableIRQ(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1410): error:  #247: function "NVIC_GetPendingIRQ"  has already been defined
+  __STATIC_INLINE uint32_t NVIC_GetPendingIRQ(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1422): error:  #247: function "NVIC_SetPendingIRQ"  has already been defined
+  __STATIC_INLINE void NVIC_SetPendingIRQ(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1434): error:  #247: function "NVIC_ClearPendingIRQ"  has already been defined
+  __STATIC_INLINE void NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1449): error:  #247: function "NVIC_GetActive"  has already been defined
+  __STATIC_INLINE uint32_t NVIC_GetActive(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1464): error:  #247: function "NVIC_SetPriority"  has already been defined
+  __STATIC_INLINE void NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+..\Libraries\CMSIS\Include\core_cm3.h(1486): error:  #247: function "NVIC_GetPriority"  has already been defined
+  __STATIC_INLINE uint32_t NVIC_GetPriority(IRQn_Type IRQn)
+..\Libraries\CMSIS\Include\core_cm3.h(1510): error:  #247: function "NVIC_EncodePriority"  has already been defined
+  __STATIC_INLINE uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)
+..\Libraries\CMSIS\Include\core_cm3.h(1538): error:  #247: function "NVIC_DecodePriority"  has already been defined
+  __STATIC_INLINE void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t* pPreemptPriority, uint32_t* pSubPriority)
+..\Libraries\CMSIS\Include\core_cm3.h(1556): error:  #247: function "NVIC_SystemReset"  has already been defined
+  __STATIC_INLINE void NVIC_SystemReset(void)
+..\Libraries\CMSIS\Include\core_cm3.h(1595): error:  #247: function "SysTick_Config"  has already been defined
+  __STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
+..\Libraries\CMSIS\Include\core_cm3.h(1635): error:  #247: function "ITM_SendChar"  has already been defined
+  __STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+..\Libraries\CMSIS\Include\core_cm3.h(1654): error:  #247: function "ITM_ReceiveChar"  has already been defined
+  __STATIC_INLINE int32_t ITM_ReceiveChar (void) {
+..\Libraries\CMSIS\Include\core_cm3.h(1673): error:  #247: function "ITM_CheckChar"  has already been defined
+  __STATIC_INLINE int32_t ITM_CheckChar (void) {
+..\User\rcc\bsp_rccclock.c: 4 warnings, 30 errors
+".\Objects\Firm_led.axf" - 30 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.0.pack
+                Keil.STM32F4xx_DFP.2.17.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_Target_1
   C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:14
+Target not created.
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
